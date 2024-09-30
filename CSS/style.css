@@ -5,3 +5,75 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+:root {
+    --lilas: #5f2c82;
+    --verde: #49a09d;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--lilas);
+    padding-top: 20px;
+}
+
+main > section#login {
+    background-color: white;
+    width: 60vw;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+main > section > div#img {
+    background-color: yellowgreen;
+    background: url(../imgs/img-tela.jpg) no-repeat center center;
+    background-size: ;
+    width: 50vw;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+main > section > div#formulario > h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+main > section > div#formulario > p {
+    font-size: 19px;
+    text-align: justify;
+}
+
+#formulario > form > p {
+    border-radius: 10px;
+    background-color: var(--lilas);
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 15px;
+}
+
+#formulario > form {
+    
+}
+
+#formulario > form > p > label > .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#formulario > form > p > input {
+    border-radius: 8px;
+    width: 40vw;
+    height: 30px;
+}
