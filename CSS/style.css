@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+body, html {
+    height: 100vh;
+}
+
 main {
     width: 100vw;
     height: 100vh;
@@ -34,31 +38,37 @@ main > section#login {
 }
 
 main > section > div#img {
-    background-color: yellowgreen;
-    background: url(../imgs/img-tela.jpg) no-repeat center center;
-    background-size: ;
-    width: 50vw;
+    height: 290px;
+}
+
+main > section > div#img > p#imagem-predio{
+    background: url(../imgs/img-tela.jpg) center center;
+    margin-top: -8px;
+    margin-left: -8px;
+    width: 60vw;
     height: 300px;
-    margin: auto;
     border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 main > section > div#formulario > h1 {
     text-align: center;
-    padding: 10px;
+    margin-top: 16px;
 }
 
 main > section > div#formulario > p {
-    font-size: 19px;
+    font-size: 15px;
     text-align: justify;
 }
 
 #formulario > form > p {
-    border-radius: 10px;
+    width: 55vw;
+    height: 60px;
+    border-radius: 20px;
     background-color: var(--lilas);
     margin: 10px;
-    padding: 5px;
-    padding-bottom: 15px;
+    
 }
 
 #formulario > form {
@@ -66,14 +76,49 @@ main > section > div#formulario > p {
 }
 
 #formulario > form > p > label > .material-symbols-outlined {
-    font-variation-settings: 'FILL' 1;
+    font-variation-settings: 'FILL' 1, 'wght' 1000, 'GRAD' 1, 'opsz' 24;
     color: white;
     text-align: center;
     padding: 5px;
+    width: 50px;
+    margin-top: 12px;
 }
 
 #formulario > form > p > input {
-    border-radius: 8px;
-    width: 40vw;
-    height: 30px;
+    position: relative;
+    border-radius: 20px;
+    width: 46vw;
+    height: 50px;
+    padding: 5px;
+    top: -10%;
+}
+
+#formulario > form > input#btn-acs {
+    background-color: var(--verde);
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 55vw;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#formulario > form > button {
+    display: block;
+    margin: auto;
+    margin-top: -17px;
+    border: 1px solid var(--verde);
+    border-radius: 20px;
+    padding: 8px;
+    width: 55vw;
+    height: 50px;
+    font-size: 15px;
+    color: var(--verde);
+    font-weight: bolder;
+    cursor: pointer;
 }

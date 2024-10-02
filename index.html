@@ -18,7 +18,7 @@
     <main>
         <section id="login">
             <div id="img">
-                
+                <p id="imagem-predio"></p>
             </div>
             <div id="formulario">
                 <h1>Login</h1>
@@ -28,14 +28,14 @@
                 <form action="login.php" method="post">
                     <p>
                         <label for="iemail"><span class="material-symbols-outlined">person</span></label>
-                        <input type="email">
+                        <input type="email" name="email" id="iemail" placeholder="Seu E-mail:">
                     </p>
                     <p>
                         <label for="isen"><span class="material-symbols-outlined">key</span></label>
-                        <input type="password">
+                        <input type="password" name="sen" id="isen" placeholder="Sua senha:">
                     </p>
-                    <input type="submit" value="Acessar"> <br>
-                    <button>Esqueceu a senha</button>
+                    <input id="btn-acs" type="submit" value="Acessar"> <br>
+                    <button>Esqueceu a senha<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#49a09d"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></button>
                 </form>
             </div>
         </section>
