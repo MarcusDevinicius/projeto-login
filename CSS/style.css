@@ -19,89 +19,43 @@
 }
 
 body, html {
-    height: 100vh;
-}
-
-main {
     background-color: var(--lilas);
     height: 100vh;
     width: 100vw;
-    padding-top: 30px;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
 section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
-    width: 85vw;
-    height: 450px;
-    margin: auto;
+    width: 250px;
+    height: 500px;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+section#login > div#img {
+    display: block;
+    background: var(--lilas) url(../imgs/img-tela.jpg);
+    background-position: center center;
+    background-size:cover ;
+    height: 200px;
+   
+}
+
+section#login > div#formulario {
+    display: block;
     padding: 10px;
 }
 
-section > div#formulario > h1{
-    margin: auto;
-    text-align: center;
-    width: 30vw;
-}
 
-section > div#formulario > p {
-    text-align: justify;
-    padding: 5px;
-    margin: auto;
-    margin-bottom: 8px;
-    width: 80vw;
-    background-color: orangered;
-}
-
-section > div#formulario > form > p {
-    background-color: var(--lilas);
-    margin: auto;
-    width: 80vw;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-section > div#formulario > form > p > label {
-    padding: 4px;
-}
-
-section > div#formulario > form > p > label > span.material-symbols-outlined {
-    color: white;
-    font-variation-settings: 'FILL' 1;
-}
-
-section > div#formulario > form > p > input {
-    width: 65vw;
-    
-    height: 50px;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-section > div#formulario > form > input#btn-acs {
-    display: block;
-    margin: auto;
-    background-color: var(--verde);
-    border: none;
-    padding: 8px;
-    border-radius: 20px;
-    width: 80vw;
-    height: 50px;
-    cursor: pointer;
-}
-
-section > div#formulario > form > button {
-    display: block;
-    margin: auto;
-    margin-top: -10px;
-    border: 1px solid var(--verde);
-    padding: 8px;
-    border-radius: 20px;
-    width: 80vw;
-    height: 50px;
-    color: var(--verde);
-    cursor: pointer;
-}
 
 
